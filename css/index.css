@@ -63,91 +63,96 @@ strong em {
     font-weight: bold;
 }
 
-@media ( max-width: 1024px ){
-    .container {
-        display: flex;
-        align-content: center;
-    }
+.container {
+    display: flex;
     
-    .container .top-nav {
+}
+
+.container .top-nav {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.container .top-nav a {
+    display: flex;
+    font-family: "Bangers";
+    font-size: 12px;
+    color: lightgrey;
+    justify-content: flex-start;
+    margin: 20px;
+    align-content: space-between;
+    text-decoration: none;
+}
+
+.container .logo {
+    display: flex;
+    justify-content: flex-end;
+    flex-flow: row nowrap;
+}
+
+@media ( max-width: 800px ) {
+    .container {
+        border: 1px solid red;
+    }
+
+    .container .logo {
         display: flex;
-        color: grey;
-        text-decoration: none;
-        margin: 0 30px 0;
+        justify-content: flex-end;       
+    }
+
+    .message .code-snippet {
+        display: none;
+    }
+
+}
+
+@media ( max-width: 400 ){
+    .message .code-snippet {
+        display: none;
+    }
+    .message .left p {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
         align-content: center;
-          
-    }
-
-}
-
-@media ( max-width: 1024 ) {
-    img {
-        width: 100%;
-        align-content: center;
-    }
-}
-@media ( max-width: 700px ){
-    img {
-        width: 100%;
-    }
-}
-@media ( max-width: 500px ){
-    img {
-        width: 100%;
+     
     }
 }
 
-@media ( max-width: 1024px) {
-    .message {
+.message {
     display: flex;
     flex-flow: row nowrap;
-    align-items: center;
-    justify-content: center;
-    }
 }
 
-@media ( max-width: 1024px ) {
-    .left p {       
+.message .left p {
     display: flex;
-    font-family: "Titillium Web";
-    font-size: 40px;
-    align-content: center; 
-   } 
-    .left img {
-    width:100%;
-    flex-flow: column;
-   }
-   #on {
-       justify-content: center;
-       flex-flow: column;
-   }
-   
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: flex-end;;
+    margin-left: 300px;
 }
 
-@media ( max-width: 1024px ) {
-    .main-content {
+.message .left .start-button {
+    margin-left: 300px;
+}
+
+.message .code-snippet {
+    justify-content: end;
+}
+
+@media ( max-width: 800 ) {
+    .message {
         display: flex;
-        flex-flow: row wrap;
-        width: 50%;
-    }
-@media ( max-width: 700px ) {
-    .main-content .section-left {
-        align-content: center;
-        align-items: center;
-        flex-flow: row wrap;
-        justify-content: space-between;
-    }
-}
- 
-@media ( max-width: 1024px ) {
-    .bottom-content .section-bottom {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-between;    
+        justify-content: center;
     }
 }
 
 
-}
+
+
+
+
+
+
 
 
